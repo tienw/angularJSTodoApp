@@ -1,0 +1,45 @@
+<md-toolbar flex>
+    <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+        <p>To Do</p>
+            <md-menu md-position-mode="target-right target">
+                <md-button class="md-icon-button" ng-click="todoList.openMenu($mdMenu, $event)">
+                    <md-icon>more_vert</md-icon>
+                </md-button>
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button ng-click="todoList.displayBy('all')">
+                            <md-icon md-menu-align-target>menu</md-icon>
+                            Display All
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="todoList.displayBy('important')">
+                            <md-icon>star</md-icon>
+                            Important Only
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+    </div>
+</md-toolbar>
+<md-content layout="column">
+    <md-list>
+        <md-list-item ng-click="todoList.navigateDetail($event,s)" ng-repeat="s in list">
+            <md-checkbox ng-model="s.completed" ng-click="toogleComplete(s.id)"></md-checkbox>
+            <md-truncate flex ng-class="s.completed ? 'strikethrough grey' : 'null'" ng-bind="s.description"></md-truncate>
+            <span  class="md-secondary">
+                <md-button 
+                    ng-click="todoList.toogleImportant(s.id)"
+                    ng-disabled="false"
+                    class="md-icon-button launch"
+                >
+                    <md-icon>{{s.important ? "star" : "star_border"}}</md-icon>
+                </md-button>
+            </span>
+        </md-list-item>
+    </md-list>
+</md-content>
+<md-button ng-click="todoList.showAdd()" class="md-fab md-primary  md-fab-bottom-right">
+    <md-icon>add</md-icon>
+</md-button>
+

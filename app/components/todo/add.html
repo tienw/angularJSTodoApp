@@ -1,0 +1,16 @@
+<md-bottom-sheet class="md-grid" layout="column">
+    <h3>Add New</h3>
+    <div ng-cloak>
+        <form name="addForm">
+            <div layout="row">
+                <md-input-container flex="100">
+                    <label>Description</label>
+                    <input md-maxlength="1000" required md-no-asterisk name="description" ng-model="description" ng-keypress="keyboardPress($event)">
+                    <div ng-messages="addForm.description.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+            </div>
+        </form>
+    </div>
+</md-bottom-sheet>

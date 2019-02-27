@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "description": "Grocery shopping in Longos",
+        "important": true,
+        "completed" : false,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    },
+    {
+        "id": 2,
+        "description": "Full body workout in LA fitness at 12:00PM",
+        "important": true,
+        "completed" : false,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    },
+    {
+        "id": 3,
+        "description": "Pick up kids at 3:00PM",
+        "important": false,
+        "completed" : false,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    },
+    {
+        "id": 4,
+        "description": "Call T-Mobile for billing issues before 5:00pm, last month bill was overcharged. Need to fix by end of the month",
+        "important": false,
+        "completed" : false,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    },
+    {
+        "id": 5,
+        "description": "Pick up package",
+        "important": false,
+        "completed" : false,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    },
+    {
+        "id": 6,
+        "description": "Code AngularJS project",
+        "important": false,
+        "completed" : true,
+        "dueDate" : "",
+        "remindAt" : "",
+        "attachments" : ""
+    }
+]

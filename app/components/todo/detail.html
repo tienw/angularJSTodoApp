@@ -1,0 +1,27 @@
+
+<md-content layout-padding>
+    <div  layout="row">
+        <p class="md-title" ng-bind="selectedItem.description" flex></p>
+        <div ng-if="selectedItem.important">
+            <md-icon layout-padding>star</md-icon>
+        </div>
+        <div ng-if="!selectedItem.important">
+            <md-icon layout-padding>star_border</md-icon>
+        </div>
+    </div>
+    <md-divider></md-divider>
+    <md-list ng-cloak>
+        <md-list-item ng-click="todoDetail.addRemindMe($event)">
+            <md-icon>alarm</md-icon>
+            <p>Remind me</p>
+        </md-list-item>
+        <md-list-item ng-click="todoDetail.addRemindMe($event)">
+            <md-icon>today</md-icon>
+            <p>Add due date</p>
+        </md-list-item>
+        <md-list-item ng-click="todoDetail.addRemindMe($event)">
+            <md-icon>attachment</md-icon>
+            <p>Add attachments</p>
+        </md-list-item>
+    </md-list>
+</md-content>

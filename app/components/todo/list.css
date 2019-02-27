@@ -1,0 +1,11 @@
+.strikethrough {
+    text-decoration: line-through;
+}
+.grey {
+  color: grey;
+}
+.add-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
